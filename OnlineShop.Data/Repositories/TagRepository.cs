@@ -1,0 +1,23 @@
+﻿using OnlineShop.Data.Infrastructure;
+using OnlineShop.Model.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnlineShop.Data.Repositories
+{
+
+    public interface ITagRepository
+    {
+
+    }
+    public class TagRepository : RepositoryBase<Product>, ITagRepository
+    {
+        public TagRepository(IDbFactory dbFactory) : base(dbFactory)
+        {
+
+        }
+    }
+}
