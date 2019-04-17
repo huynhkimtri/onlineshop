@@ -34,7 +34,6 @@ namespace OnlineShop.Model.Models
         [MaxLength(50)]
         public string Email { get; set; }
 
-        [MaxLength(50)]
         public bool Status { get; set; }
 
         public int DisplayOrder { get; set; }

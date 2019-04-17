@@ -28,7 +28,6 @@ namespace OnlineShop.Model.Models
         public string Description { get; set; }
 
         public int? ParentID { get; set; }
-
         public int? DisplayOrder { get; set; }
 
         [MaxLength(256)]

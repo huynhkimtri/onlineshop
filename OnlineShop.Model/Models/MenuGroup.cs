@@ -13,11 +13,12 @@ namespace OnlineShop.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [MaxLength(50)]
-        public string name { get; set; }
+        public string Name { get; set; }
+
         public virtual IEnumerable<Menu> Menus { get; set; }
     }
 }

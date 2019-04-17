@@ -12,11 +12,12 @@ namespace OnlineShop.Model.Models
     public class PostTag
     {
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(50)]
         public string TagID { get; set; }
 
         [Key]
+        [Column(Order = 1)]
         public int PostID { get; set; }
 
         [ForeignKey("TagID")]

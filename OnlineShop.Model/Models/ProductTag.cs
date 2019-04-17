@@ -13,10 +13,11 @@ namespace OnlineShop.Model.Models
     {
         [Key]
         [MaxLength(50)]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 1)]
         public string TagID { get; set; }
 
         [Key]
+        [Column(Order = 2)]
         public int ProductID { get; set; }
 
         [ForeignKey("ProductID")]

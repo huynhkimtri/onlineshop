@@ -27,9 +27,7 @@ namespace OnlineShop.Model.Models
 
         [MaxLength(256)]
         public string URL { get; set; }
-
-        public int? DisplayOrder { get; set; }
-
+        public int DisplayOrder { get; set; }
         public bool Status { get; set; }
     }
 }
